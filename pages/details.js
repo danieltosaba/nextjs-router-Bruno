@@ -11,7 +11,7 @@ export default function Details() {
     <div>
       {people.map((el) => (
         <div key={`${el.name}${el.vehicle}`}>
-          <Link as={`${el.vehicle}/${el.name}`} href="/[vehicle]/[person]">
+          <Link href={`${el.vehicle}/${el.name}`}>
             <a>Link to {`${el.name}'s ${el.vehicle}`}</a>
           </Link>
         </div>
